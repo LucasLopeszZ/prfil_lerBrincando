@@ -1,10 +1,11 @@
 from PySide6.QtWidgets import QApplication
-from telas.perfil import PerfilWindow
-import sys
 
-app = QApplication(sys.argv)
+from telas.login import LoginWindow
 
-window = PerfilWindow()
+app = QApplication([])
+
+window = LoginWindow()
+
 window.show()
 
-sys.exit(app.exec())
+app.exec()
